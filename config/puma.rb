@@ -34,7 +34,7 @@ preload_app!
 plugin :tmp_restart
 
 rackup DefaultRackup
-prot ENV['PORT'] || 3000
+# port ENV['PORT'] || 3000
 environment ENV['RACK_ENV'] || 'development'
 on_worker_boot do
   # Worker specific setup for Rails 4.1+
