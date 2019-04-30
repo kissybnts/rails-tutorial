@@ -42,6 +42,8 @@ gem 'bootstrap-will_paginate', '~> 1.0'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
+gem 'carrierwave', '~> 1.3', '>= 1.3.1'
+gem 'mini_magick', '~> 4.9', '>= 4.9.3'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
@@ -74,6 +76,7 @@ end
 
 group :production do
   gem 'pg', '~> 0.18.4'
+  gem 'fog', '~> 2.1'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
